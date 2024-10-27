@@ -168,19 +168,19 @@ public class Game extends JPanel{
     public void moveCar(KeyEvent e){
         if(e.getKeyCode() == KeyEvent.VK_UP){   //if user clicks on the up arrow key
             isUp = true;
-            speedX = 1;     //moves car foward
+            speedY = -1;     //moves car foward
         }
         if(e.getKeyCode() == KeyEvent.VK_DOWN){ //if user clicks on the down arrow key
             isDown = true;
-            speedX = -2;    //moves car backwards
+            speedY = 1;    //moves car backwards
         }
         if(e.getKeyCode() == KeyEvent.VK_RIGHT){ //if user clicks on the right arrow key
             isRight = true;
-            speedY = 1;     //moves car to the right
+            speedX = 1;     //moves car to the right
         }
         if(e.getKeyCode() == KeyEvent.VK_LEFT){ //if user clicks on the left arrow key
             isLeft = true;
-            speedY = -1;    //moves car to the left
+            speedX = -2;    //moves car to the left
         }
     }
     
